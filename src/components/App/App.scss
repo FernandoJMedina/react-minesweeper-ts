@@ -3,15 +3,16 @@
   @include borders(#ffffff, #999999);
   background: #c2c2c2;
   padding: 16px;
-  border-width: 4px;
+  border-width: 3px;
   border-style: solid;
 }
 
 .Header {
   @include borders(#7b7b7b, #ffffff);
+  @include no-selection;
   background: #c0c0c0;
   padding: 10px 12px;
-  border-width: 4px;
+  border-width: 3px;
   border-style: solid;
   display: flex;
   justify-content: space-between;
@@ -21,7 +22,7 @@
 .Body {
   @include borders(#7b7b7b, #ffffff);
   margin-top: 16px;
-  border-width: 4px;
+  border-width: 3px;
   border-style: solid;
   display: grid;
   grid-template-rows: repeat(9, 1fr);
@@ -30,10 +31,11 @@
 
 .Face {
   @include borders; //has default values
+  @include buttons;
   width: 52px;
   height: 52px;
   font-size: 30px;
-  border-width: 4px;
+  border-width: 3px;
   border-right-color: #7b7b7b;
   display: flex;
   justify-content: center;
