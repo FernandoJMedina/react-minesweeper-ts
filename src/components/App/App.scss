@@ -21,6 +21,8 @@
 
 .Body {
   @include borders(#7b7b7b, #ffffff);
+  @include no-selection;
+
   margin-top: 16px;
   border-width: 3px;
   border-style: solid;
